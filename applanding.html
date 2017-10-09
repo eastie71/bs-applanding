@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Asset Manager</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    
+    <style type="text/css">
+
+        .jumbotron {
+            background-image: url("images/main.jpg");
+            text-align: center;
+        }
+
+        #subscribeEmail {
+            width: 350px;
+        }
+
+        #sign-up {
+            margin: 0 auto;
+        }
+
+        #about-container {
+            background-color: #F5FBC7;
+            background-size: cover;
+        }
+
+        #about {
+            text-align: center;
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+
+        #card-container {
+            padding-top: 40px;
+        }
+
+        #home { 
+            padding-top: 150px;   
+            padding-bottom: 200px;
+            margin-bottom: 0;
+        }
+
+        #download {
+            width: 100%;
+            padding-top: 300px;
+            height: 700px;
+            background-image: url("images/car.jpg");
+            text-align: center;
+        }
+        #appStoreImage {
+            width: 300px;
+        }
+        #playStoreImage {
+            width: 270px;
+        }
+    </style>
+  </head>
+  <body>
+    
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark" id="navbar-main">
+        <a class="navbar-brand" href="#">Personal Asset Manager</a>
+        <div class="collaspse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link active" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#download">Download</a>
+                </li>
+            </ul>
+            <form class="form-inline">
+                <input class="form-control mr-sm-2" type="email" placeholder="Email">
+                <input class="form-control mr-sm-2" type="password" placeholder="Password">
+                <button class="btn btn-success my-2 my-sm-0" type="submit">Login</button>
+            </form>
+        </div>
+    </nav>
+
+    <div class="jumbotron" id="home">
+        <div class="container">
+            <h1 class="display-3">Personal Asset Manager</h1>
+            <p class="lead">Manage all your personal assets for warranty, valuation and insurance purposes.</p>
+            <hr class="m-y-2">
+            <p>Would you like to find out more? Please join our mailing list.</p>
+
+            <div class="form-inline">
+                <div id="sign-up" class="form-group">
+                    <label class="sr-only" for="subscribeEmail">Your email address</label>
+                    <div id="email-sign-up" class="input-group mb-2 mr-sm-2 mb-sm-0">                         
+                        <div class="input-group-addon">@</div>
+                        <input type="email" class="form-control" id="subscribeEmail" placeholder="Your email">
+                    </div>
+                    <a class="btn btn-primary btn-md" href="#" role="button">Sign up</a>
+                </div>                
+            </div>            
+        </div>
+    </div>
+
+    <div id="about-container">
+        <div id="about" class="container">
+            <h2 class="display-5">What can you expect from this app?</h2>
+            <p class="lead">Here is just a small sample of what this App can do...</p>
+        
+            <div id="card-container" class="card-deck">
+                <div class="card">
+                  <img class="card-img-top" src="images/phone.jpg" alt="Smart Phone">
+                  <div class="card-body">
+                    <h4 class="card-title">Record Receipts</h4>
+                    <p class="card-text">Keep track of all your receipts for your special purchases. You will know when you purchased them, from where, and how long left on your warranty.</p>
+                  </div>
+                </div>
+                <div class="card">
+                  <img class="card-img-top" src="images/camera.jpg" alt="Camera">
+                  <div class="card-body">
+                    <h4 class="card-title">Insurance</h4>
+                    <p class="card-text">Capture photos of your goods, recording prices and serial numbers where required. Easy retrieval for presenting to your Insurance company in case of loss.</p>
+                  </div>
+                </div>
+                <div class="card">
+                  <img class="card-img-top" src="images/laptop.jpg" alt="Laptop">
+                  <div class="card-body">
+                    <h4 class="card-title">Product Manuals</h4>
+                    <p class="card-text">Fast access to product manuals for your devices, all at your fingertips!</p>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="download" class="navPos">
+        <h2 class="display-4">Download the app here!</h2>
+        <p class="lead">What are you waiting for...</p>
+        <a class="mr-sm-3" href=""><img id="appStoreImage" src="images/apple.svg"></a>
+        <a href=""><img id="playStoreImage" src="images/android.png"></a>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+  </body>
+</html>
